@@ -5,10 +5,10 @@ https://jsonplaceholder.typicode.com/
 
 Foram utilizados os seguintes endpoints:
 
-´´´/posts´´´
+```/posts```
 https://jsonplaceholder.typicode.com/posts
 
-/photos
+```/photos```
 https://jsonplaceholder.typicode.com/photos
 
 Filtro de busca dinâmico, retornando os posts existentes
