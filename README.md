@@ -13,6 +13,8 @@ https://jsonplaceholder.typicode.com/photos
 
 Filtro de busca dinâmico, retornando os posts existentes
 
+Utilizando ferramenta de CI/CD com Gitflow na Vercel
+
 ```Acesso em produção```
 
 <h3>https://blogapi-psi.vercel.app/</h3>
