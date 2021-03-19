@@ -13,3 +13,6 @@ https://jsonplaceholder.typicode.com/photos
 
 Filtro de busca dinâmico, retornando os posts existentes
 
+```Acesso em produção```
+
+https://blogapi-psi.vercel.app/
