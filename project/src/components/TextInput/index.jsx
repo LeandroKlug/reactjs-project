@@ -1,4 +1,3 @@
-import {searchValue, handleChange} from '../../templates/Home';
 import './styles.css';
 
 export const TextInput = ({ searchValue, handleChange }) => {
