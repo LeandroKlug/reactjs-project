@@ -15,6 +15,12 @@ Filtro de busca dinâmico, retornando os posts existentes
 
 Utilizando ferramenta de CI/CD com Gitflow na Vercel
 
+```Jest```
+
+Utilizado framework para realização dos testes 
+
+https://jestjs.io/pt-BR/
+
 ```Acesso em produção```
 
 <h3>https://blogapi-psi.vercel.app/</h3>
