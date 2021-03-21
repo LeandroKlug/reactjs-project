@@ -76,7 +76,7 @@ export const Home = () => {
       <div className="button-container">
         {!searchValue && (
           <Button 
-          text="Mais postagens"
+          text="Load more"
           onClick={loadMorePosts}
           disabled={noMorePosts}
         />
