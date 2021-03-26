@@ -1,38 +1,37 @@
-import { render, screen } from '@testing-library/react';
+import { render, screen } from '@testing-library/react'
 
-import userEvent from '@testing-library/user-event';
+import userEvent from '@testing-library/user-event'
 
-import { TextInput } from '.';
+import { TextInput } from '.'
 
 describe('<TextInput />', () => {
-    it('should have a value of searchValue', () => {
-        const fn = jest.fn();
-        
-        render(<TextInput handleChange={fn} searchValue={'testando'} />);
+  it('should have a value of searchValue', () => {
+    const fn = jest.fn()
 
-        const input = screen.getByPlaceholderText(/Digite a pesquisa/i);
+    render(<TextInput handleChange={fn} searchValue={'testando'} />)
 
-        expect(input.value).toBe('testando');
-    });
+    const input = screen.getByPlaceholderText(/Digite a pesquisa/i)
 
-    it('should call handleChange on each key pressed', () => {
-        const fn = jest.fn();
-        render(<TextInput handleChange={fn} />);
+    expect(input.value).toBe('testando')
+  })
 
-        const input = screen.getByPlaceholderText(/Digite a pesquisa/i);
-        const value = 'passando o valor';
+  it('should call handleChange on each key pressed', () => {
+    const fn = jest.fn()
+    render(<TextInput handleChange={fn} searchValue='' />)
 
-        userEvent.type(input, value);
+    const input = screen.getByPlaceholderText(/Digite a pesquisa/i)
+    const value = ''
 
-        expect(input.value).toBe(value);
-        expect(fn).toHaveBeenCalledTimes(value.length);
-        
-    });
+    userEvent.type(input, value)
 
-    it('should match snapshot', () => {
-        const fn = jest.fn();
-        const {container} = render(<TextInput handleChange={fn} />);
+    expect(input.value).toBe(value)
+    expect(fn).toHaveBeenCalledTimes(value.length)
+  })
 
-        expect(container.firstChild).toMatchSnapshot();
-    });
-});
+  it('should match snapshot', () => {
+    const fn = jest.fn()
+    const { container } = render(<TextInput handleChange={fn} searchValue='' />)
+
+    expect(container.firstChild).toMatchSnapshot()
+  })
+})
